@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatingLoader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trq-ji-Uyx">
+                                <rect key="frame" x="87" y="243.5" width="200" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibw-zJ-q04">
+                                        <rect key="frame" x="40" y="39.5" width="120" height="120"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bike" translatesAutoresizingMaskIntoConstraints="NO" id="MGF-dq-Xpm">
+                                                <rect key="frame" x="41" y="100" width="38" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="38" id="syR-hq-0d2"/>
+                                                    <constraint firstAttribute="height" constant="20" id="uLQ-vT-Wbx"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.35294117650000001" green="0.40784313729999999" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Krq-ze-f9X"/>
+                                            <constraint firstAttribute="bottom" secondItem="MGF-dq-Xpm" secondAttribute="bottom" id="PJM-0M-rsk"/>
+                                            <constraint firstItem="MGF-dq-Xpm" firstAttribute="centerX" secondItem="Ibw-zJ-q04" secondAttribute="centerX" id="Yxb-3K-Wbe"/>
+                                            <constraint firstAttribute="width" constant="120" id="vFG-OW-w0t"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pathao_logo" translatesAutoresizingMaskIntoConstraints="NO" id="OPF-m5-0Ga">
+                                        <rect key="frame" x="72" y="72" width="56" height="56"/>
+                                        <color key="backgroundColor" red="0.90253031250000004" green="0.91095733639999998" blue="0.92089241740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="ZXv-P7-8vi"/>
+                                            <constraint firstAttribute="width" constant="56" id="ruV-2M-9MS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OPF-m5-0Ga" firstAttribute="centerY" secondItem="trq-ji-Uyx" secondAttribute="centerY" id="DMD-Wx-upm"/>
+                                    <constraint firstItem="Ibw-zJ-q04" firstAttribute="centerY" secondItem="trq-ji-Uyx" secondAttribute="centerY" id="Q3S-ca-gFL"/>
+                                    <constraint firstItem="Ibw-zJ-q04" firstAttribute="centerX" secondItem="trq-ji-Uyx" secondAttribute="centerX" id="dvK-jt-J4H"/>
+                                    <constraint firstAttribute="height" constant="200" id="fhH-W1-Wb3"/>
+                                    <constraint firstAttribute="width" constant="200" id="ywg-Ol-T0t"/>
+                                    <constraint firstItem="OPF-m5-0Ga" firstAttribute="centerX" secondItem="trq-ji-Uyx" secondAttribute="centerX" id="zrR-Gh-LCe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="trq-ji-Uyx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b5L-fX-QeF"/>
+                            <constraint firstItem="trq-ji-Uyx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uxw-WZ-LPs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="Ibw-zJ-q04" id="nt1-UW-YvL"/>
+                        <outlet property="centerIV" destination="OPF-m5-0Ga" id="Jqd-on-tko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pathao_logo" width="150" height="52"/>
+        <image name="bike" width="650" height="650"/>
+    </resources>
+</document>
